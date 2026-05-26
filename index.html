@@ -3,95 +3,179 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>合肥饰诚广告传媒有限公司｜11年文化墙·门头招牌·展厅标识制作</title>
-<meta name="keywords" content="合肥广告公司,合肥文化墙设计,合肥门头招牌制作,合肥展厅制作,标识标牌,6S管理看板">
-<meta name="description" content="合肥饰诚广告2015年成立，11年本地实体广告服务商，自有设计施工团队，免费上门勘测、免费设计报价，主营文化墙、展厅、导视标识、门头发光字、广告物料一站式定制。">
+<title>合肥饰诚广告传媒有限公司</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Microsoft YaHei,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Microsoft YaHei",sans-serif}
 body{background:#fff;color:#333;line-height:1.7}
-header{background:#222;color:#fff;padding:15px 5%;display:flex;justify-content:space-between;align-items:center}
-.logo{font-size:22px;font-weight:700;color:#e63946}
-.tel{font-size:16px}
-nav{background:#e63946}
-.nav-wrap{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap}
-nav a{color:#fff;text-decoration:none;padding:14px 22px;display:inline-block}
-nav a:hover{background:#c11f2d}
-.banner{background:#333;color:#fff;text-align:center;padding:70px 20px;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(https://picsum.photos/1920/600);background-size:cover}
-.banner h1{font-size:36px;margin-bottom:15px}
-.banner p{font-size:18px;max-width:800px;margin:0 auto}
-.section{max-width:1200px;margin:0 auto;padding:60px 20px}
-.section h2{text-align:center;font-size:28px;margin-bottom:40px;color:#222;position:relative}
-.section h2:after{content:"";width:60px;height:3px;background:#e63946;position:absolute;left:50%;bottom:-10px;transform:translateX(-50%)}
-.about{background:#f7f7f7}
-.about p{font-size:16px;max-width:900px;margin:0 auto;line-height:1.9}
-.stats{display:flex;justify-content:center;flex-wrap:wrap;margin-top:40px;gap:20px}
-.stat{flex:1;min-width:150px;text-align:center;padding:20px}
-.stat .num{font-size:32px;font-weight:700;color:#e63946;margin-bottom:5px}
-.services{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:25px;margin-top:20px}
-.card{background:#fff;border:1px solid #eee;border-radius:8px;padding:25px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.05)}
-.card h3{color:#e63946;margin-bottom:10px}
-.contact{background:#222;color:#fff;text-align:center;padding:50px 20px}
-.contact h2{margin-bottom:20px}
-.contact p{font-size:17px;margin:8px 0}
-footer{background:#111;color:#777;text-align:center;padding:20px;font-size:14px}
+a{text-decoration:none;color:inherit}
+.container{max-width:1200px;margin:0 auto;padding:0 15px}
+
+/* 导航 */
+.nav{background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:99}
+.nav .container{display:flex;justify-content:space-between;align-items:center;height:80px}
+.logo{font-size:24px;font-weight:bold;color:#c02424}
+.menu{display:flex;list-style:none}
+.menu li{margin-left:30px}
+.menu a{font-size:16px;color:#333;font-weight:500}
+.menu a:hover{color:#c02424}
+
+/*  banner */
+.banner{width:100%;height:500px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://picsum.photos/1920/1080?random=1);background-size:cover;background-position:center}
+.banner-text{text-align:center;color:#fff}
+.banner-text h1{font-size:42px;margin-bottom:15px}
+.banner-text p{font-size:18px;margin-bottom:25px}
+.banner-btn{display:inline-block;padding:12px 30px;background:#c02424;color:#fff;border-radius:4px;font-size:16px}
+
+/* 标题通用 */
+.section-title{text-align:center;margin:60px 0 40px}
+.section-title h2{font-size:30px;color:#222;position:relative;padding-bottom:15px}
+.section-title h2::after{content:"";width:50px;height:3px;background:#c02424;position:absolute;bottom:0;left:50%;transform:translateX(-50%)}
+.section-title p{color:#666;margin-top:10px;font-size:16px}
+
+/* 关于我们 */
+.about{padding:40px 0 80px}
+.about-wrap{display:flex;flex-wrap:wrap;gap:40px;align-items:center}
+.about-left{flex:1;min-width:300px}
+.about-left img{width:100%;border-radius:6px}
+.about-right{flex:1;min-width:300px}
+.about-right h3{font-size:24px;margin-bottom:15px;color:#222}
+.about-right p{font-size:16px;color:#555;line-height:1.9;margin-bottom:15px}
+
+/* 服务项目 */
+.services{background:#f9f9f9;padding:60px 0}
+.service-box{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:25px}
+.service-item{background:#fff;padding:30px;border-radius:6px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+.service-item h3{font-size:18px;margin:15px 0;color:#222}
+.service-item p{color:#666;font-size:14px}
+
+/* 案例展示 */
+.case{padding:60px 0}
+.case-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+.case-item img{width:100%;height:200px;object-fit:cover;border-radius:6px}
+
+/* 联系我们 */
+.contact{background:#222;color:#fff;padding:60px 0}
+.contact .section-title h2{color:#fff}
+.contact-wrap{display:flex;flex-wrap:wrap;gap:40px;justify-content:center;text-align:center}
+.contact-item{min-width:200px}
+.contact-item h3{font-size:18px;margin-bottom:10px;color:#c02424}
+.contact-item p{font-size:16px;color:#eee}
+
+/* 底部 */
+.footer{background:#111;color:#777;text-align:center;padding:20px;font-size:14px}
 </style>
 </head>
+
 <body>
 
-<header>
-  <div class="logo">合肥饰诚广告传媒有限公司</div>
-  <div class="tel">咨询热线：15955145045</div>
-</header>
+<!-- 导航 -->
+<div class="nav">
+<div class="container">
+<div class="logo">合肥饰诚广告传媒有限公司</div>
+<ul class="menu">
+<li><a href="#">首页</a></li>
+<li><a href="#">关于我们</a></li>
+<li><a href="#">服务项目</a></li>
+<li><a href="#">案例展示</a></li>
+<li><a href="#">联系我们</a></li>
+</ul>
+</div>
+</div>
 
-<nav>
-  <div class="nav-wrap">
-    <a href="#">首页</a>
-    <a href="#">关于我们</a>
-    <a href="#">服务项目</a>
-    <a href="#">成功案例</a>
-    <a href="#">联系我们</a>
-  </div>
-</nav>
-
+<!-- banner -->
 <div class="banner">
-  <h1>11年合肥本地广告服务商</h1>
-  <p>专注企业文化墙、门头招牌、展厅导视、6S看板设计制作，免费上门勘测 · 免费设计 · 免费报价</p>
+<div class="banner-text">
+<h1>专业广告制作 · 一站式服务</h1>
+<p>文化墙｜门头招牌｜标识标牌｜发光字｜展厅设计</p>
+<a href="#" class="banner-btn">立即咨询</a>
+</div>
 </div>
 
-<div class="section about">
-  <h2>关于我们</h2>
-  <p>合肥饰诚广告传媒有限公司成立于2015年，深耕合肥广告行业11年，拥有8人全职专业设计施工团队，专注文化墙、展厅、导视标识、门头发光字、6S看板、广告物料一站式定制服务。我们坚持以诚饰城、实景实拍，不外包不转包，服务上市企业、科技公司、院校及政企单位，为客户提供高品质、高性价比的广告落地工程。</p>
+<!-- 关于我们 -->
+<div class="about">
+<div class="section-title">
+<h2>关于我们</h2>
+<p>合肥饰诚广告，用心做好每一个广告工程</p>
+</div>
+<div class="container about-wrap">
+<div class="about-left">
+<img src="https://picsum.photos/800/600?random=10" alt="关于我们">
+</div>
+<div class="about-right">
+<h3>合肥饰诚广告传媒有限公司</h3>
+<p>公司成立于2015年，专注广告设计、制作、安装一站式服务。</p>
+<p>主营：企业文化墙、党建文化墙、门头招牌、发光字、标识导视、展厅制作、6S看板、广告物料等。</p>
+<p>自有设计施工团队，免费上门测量、免费设计方案、免费报价。</p>
+</div>
+</div>
 </div>
 
-<div class="section">
-  <h2>企业实力</h2>
-  <div class="stats">
-    <div class="stat"><div class="num">11年</div><p>本地深耕</p></div>
-    <div class="stat"><div class="num">1000+</div><p>服务客户</p></div>
-    <div class="stat"><div class="num">33+</div><p>政企案例</p></div>
-    <div class="stat"><div class="num">8人</div><p>专业团队</p></div>
-  </div>
+<!-- 服务项目 -->
+<div class="services">
+<div class="section-title">
+<h2>服务项目</h2>
+<p>专业、高效、品质保证</p>
+</div>
+<div class="container service-box">
+<div class="service-item">
+<h3>文化墙制作</h3>
+<p>企业、党建、校园、社区文化墙设计安装</p>
+</div>
+<div class="service-item">
+<h3>门头招牌</h3>
+<p>发光字、亚克力字、不锈钢字、卡布灯箱</p>
+</div>
+<div class="service-item">
+<h3>标识标牌</h3>
+<p>导视牌、指示牌、科室牌、楼层牌定制</p>
+</div>
+<div class="service-item">
+<h3>展厅设计</h3>
+<p>企业展厅、党建展厅、文化展厅整体施工</p>
+</div>
+</div>
 </div>
 
-<div class="section">
-  <h2>核心服务项目</h2>
-  <div class="services">
-    <div class="card"><h3>文化墙工程</h3><p>企业文化墙、党建文化墙、校园文化墙设计制作安装</p></div>
-    <div class="card"><h3>展厅整体服务</h3><p>企业展厅、科技展厅、政务展厅设计施工与翻新</p></div>
-    <div class="card"><h3>导视标识系统</h3><p>园区、写字楼、小区、停车场整套标识标牌</p></div>
-    <div class="card"><h3>门头发光字</h3><p>门店招牌、亚克力字、不锈钢发光字、楼顶大字</p></div>
-    <div class="card"><h3>6S管理看板</h3><p>工厂车间、企事业单位6S看板、安全公示牌</p></div>
-    <div class="card"><h3>广告物料印刷</h3><p>海报、宣传单、名片、灯箱、条幅、不干胶一站式制作</p></div>
-  </div>
+<!-- 案例展示 -->
+<div class="case">
+<div class="section-title">
+<h2>案例展示</h2>
+<p>上千家客户的共同选择</p>
+</div>
+<div class="container case-grid">
+<div class="case-item"><img src="https://picsum.photos/600/400?random=2"></div>
+<div class="case-item"><img src="https://picsum.photos/600/400?random=3"></div>
+<div class="case-item"><img src="https://picsum.photos/600/400?random=4"></div>
+<div class="case-item"><img src="https://picsum.photos/600/400?random=5"></div>
+</div>
 </div>
 
+<!-- 联系我们 -->
 <div class="contact">
-  <h2>联系我们</h2>
-  <p>电话 / 微信：15955145045</p>
-  <p>服务范围：合肥及周边全城上门服务</p>
+<div class="section-title">
+<h2>联系我们</h2>
+<p>欢迎来电咨询，免费上门服务</p>
+</div>
+<div class="container contact-wrap">
+<div class="contact-item">
+<h3>咨询电话</h3>
+<p>15955145045</p>
+</div>
+<div class="contact-item">
+<h3>服务范围</h3>
+<p>合肥及周边地区</p>
+</div>
+<div class="contact-item">
+<h3>公司地址</h3>
+<p>安徽省合肥市</p>
+</div>
+</div>
 </div>
 
-<footer>© 2026 合肥饰诚广告传媒有限公司 版权所有</footer>
+<!-- 底部 -->
+<div class="footer">
+© 2025 合肥饰诚广告传媒有限公司 版权所有
+</div>
 
 </body>
 </html>
